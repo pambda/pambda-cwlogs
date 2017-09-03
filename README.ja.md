@@ -39,6 +39,7 @@ export const handler = createLambda(
     - ログの出力先グループ名。
 - `options.makeLogStreamName(event, context)`
     - ログの出力先ストリーム名を返す関数。
+    - この関数が falsy な値を返した時はログ出力しない。
 
 ## context.logEvent(...args)
 

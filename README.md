@@ -39,6 +39,7 @@ Generate and return a pambda which adds the logger function to `context`.
     - The name of the log group.
 - `options.makeLogStreamName(event, context)`
     - The function makes the name of the log stream.
+    - If this function returns falsy, logs are discarded.
 
 ## context.logEvent(...args)
 

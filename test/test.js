@@ -22,3 +22,24 @@ test('test', t => {
     t.error(err);
   });
 });
+
+test('discard logs', t => {
+  t.plan(2);
+
+  const lambda = cwlogs({
+    logGroupName: 'Sandbox',
+    makeLogStreamName(event, context) {
+      return null;
+    },
+  })((event, context, callback) => {
+    t.equal(typeof(context.logEvent), 'function');
+
+    context.logEvent('this message must be discarded');
+
+    callback(null, {});
+  });
+
+  lambda({}, {}, (err, result) => {
+    t.error(err);
+  });
+});
