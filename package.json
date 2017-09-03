@@ -1,0 +1,40 @@
+{
+  "name": "pambda-cwlogs",
+  "version": "0.0.1",
+  "description": "Pambda for CloudWatch Logs",
+  "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/pambda/pambda-cwlogs/issues"
+  },
+  "dependencies": {
+    "err-json": "0.0.3"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.108.0",
+    "eslint": "^4.5.0",
+    "tape": "^4.8.0"
+  },
+  "homepage": "https://github.com/pambda/pambda-cwlogs",
+  "keywords": [
+    "aws",
+    "cloudwatch",
+    "cwlogs",
+    "lambda",
+    "pambda"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pambda/pambda-cwlogs.git"
+  },
+  "scripts": {
+    "lint": "eslint lib",
+    "prepare": "npm run lint && npm test",
+    "test": "tape test/test*.js"
+  },
+  "files": [
+    "README.md",
+    "lib/"
+  ]
+}
