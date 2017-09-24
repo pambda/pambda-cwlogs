@@ -43,7 +43,7 @@ Generate and return a pambda which adds the logger function to `context`.
 
 ## context.logEvent(...args)
 
-A function that is added by this pambda to `context'.
+A function that is added by this pambda to `context`.
 
 It outputs the message specified by argument `args` to CloudWatch Logs.
 
