@@ -1,6 +1,6 @@
 {
   "name": "pambda-cwlogs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Pambda for CloudWatch Logs",
   "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
   "bugs": {
