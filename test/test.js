@@ -1,6 +1,11 @@
 const test = require('tape');
 const { cwlogs } = require('..');
 
+const AWS = require('aws-sdk');
+AWS.config.update({
+  region: 'us-west-2',
+});
+
 test('test', t => {
   t.plan(2);
 
