@@ -7,7 +7,8 @@
     "url": "https://github.com/pambda/pambda-cwlogs/issues"
   },
   "dependencies": {
-    "err-json": "0.0.3"
+    "err-json": "0.0.3",
+    "lambda-callbackify": "0.0.1"
   },
   "devDependencies": {
     "aws-sdk": "^2.210.0",
