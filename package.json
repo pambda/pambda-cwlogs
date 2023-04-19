@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "aws-sdk": "^2.229.1",
-    "eslint": "^4.19.1",
+    "eslint": "^8.38.0",
     "tape": "^4.9.0"
   },
   "homepage": "https://github.com/pambda/pambda-cwlogs",
